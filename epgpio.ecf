@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-20-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-20-0 http://www.eiffel.com/developers/xml/configuration-1-20-0.xsd" name="epigpio" uuid="5164299A-D652-44BF-A670-4DF071F520EC" library_target="epigpio">
+	<description>PIGPIO C/C++ wrapped with Eiffel</description>
+	<target name="epigpio">
+		<root all_classes="true"/>
+		<option warning="true" full_class_checking="false" is_attached_by_default="true" manifest_array_type="mismatch_warning">
+			<assertions precondition="true"/>
+		</option>
+		<setting name="console_application" value="true"/>
+		<setting name="inlining_size" value="0"/>
+		<setting name="msil_classes_per_module" value="5"/>
+		<setting name="dead_code_removal" value="feature"/>
+		<external_include location="/home/larry/Documents/github/pgpio"/>
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
+		<cluster name="src" location=".\" recursive="true">
+			<file_rule>
+				<exclude>/EIFGENs$</exclude>
+				<exclude>/c$</exclude>
+				<exclude>/include$</exclude>
+			</file_rule>
+		</cluster>
+	</target>
+</system>

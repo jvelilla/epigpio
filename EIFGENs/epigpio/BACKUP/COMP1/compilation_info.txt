@@ -1,0 +1,5 @@
+Compiler version: 19.05.10.3187 GPL Edition - linux-armv7
+Type: Quick_melt
+batch mode: False
+new session: True
+starting date: 08/23/2020 8:52:13.801 AM
